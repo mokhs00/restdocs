@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.mokhs'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 configurations {
     compileOnly {
@@ -47,8 +47,8 @@ asciidoctor {
     dependsOn test
     inputs.dir snippetsDir
     sourceDir 'src/main/asciidoc'
-    attributes \
-        'snippets': file('target/snippets')
+//    attributes \
+//        'snippets': file('target/snippets')
 }
 
 
