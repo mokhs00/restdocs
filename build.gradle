@@ -39,22 +39,22 @@ dependencies {
 }
 
 test {
-    outputs.dir snippetsDir
+//    outputs.dir snippetsDir
     useJUnitPlatform()
 }
 
-asciidoctor {
-    dependsOn test
-    inputs.dir snippetsDir
-    sourceDir 'src/main/asciidoc'
+//asciidoctor {
+//    dependsOn test
+//    inputs.dir snippetsDir
+//    sourceDir 'src/main/asciidoc'
 //    attributes \
 //        'snippets': file('target/snippets')
-}
-
-
-bootJar {
-    dependsOn asciidoctor
-    from ("${asciidoctor.outputDir}/html5"){
-        into 'static/docs'
-    }
-}
+//}
+//
+//
+//bootJar {
+//    dependsOn asciidoctor
+//    from ("${asciidoctor.outputDir}/html5"){
+//        into 'static/docs'
+//    }
+//}
